@@ -942,6 +942,39 @@ body {
   color: var(--accent-blue);
 }
 
+.cert-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.cert-link {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent-purple);
+  text-decoration: none;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 50px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.cert-link:hover {
+  background: rgba(167,139,250,0.12);
+  border-color: rgba(167,139,250,0.6);
+}
+
+.cert-link.pdf {
+  color: var(--accent-blue);
+  border-color: rgba(96,165,250,0.3);
+}
+
+.cert-link.pdf:hover {
+  background: rgba(96,165,250,0.1);
+  border-color: rgba(96,165,250,0.6);
+}
+
 /* Achievements bar */
 .achievements-bar {
   display: flex;
