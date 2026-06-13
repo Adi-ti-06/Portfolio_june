@@ -99,6 +99,22 @@ body {
 .nav-links a:hover { color: var(--accent-purple); }
 .nav-links a:hover::after { transform: scaleX(1); }
 
+.nav-contact-highlight {
+  color: var(--bg-primary) !important;
+  background: var(--accent-purple);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600 !important;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+.nav-contact-highlight::after { display: none !important; }
+.nav-contact-highlight:hover {
+  background: var(--accent-blue) !important;
+  color: var(--bg-primary) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
